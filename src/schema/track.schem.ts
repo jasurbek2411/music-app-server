@@ -22,7 +22,7 @@ export class Track {
   picture: string;
 
   @Prop()
-  auido: string;
+  audio: string;
 
   @Prop({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }] })
   comments: Comment[];

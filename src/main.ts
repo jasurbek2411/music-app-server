@@ -8,6 +8,7 @@ const start = async () => {
     await app.listen(PORT, () =>
       console.log(`Server started on port: ${PORT}`),
     );
+    app.enableCors();
   } catch (error) {
     console.log(error);
   }
